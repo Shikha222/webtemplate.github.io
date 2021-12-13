@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title> SARKAR HUKUM</title>
+  <link rel="icon" href="cow_PNG50589.png" type="image/X-icon">
+  <link rel="stylesheet" href="order.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="title">
+      Order now
+    </div>
+    <form action="order.php" method="POST">
+      <div class="form">
+        <div class="inputfield">
+          <label>Full Name</label>
+          <input type="text" class="input" name="fname" id="fname" pattern="[a-zA-Z]+\s+[a-zA-Z]+\s+[a-zA-Z]+" required
+            title="Hello">
+        </div>
+        <div class="inputfield">
+          <label>Select Product</label>
+          <div class="custom_select">
+            <select name="selectp" id="selectp" required>
+              <option value="">Select</option>
+              <option value="veg biryani">veg biryani</option>
+              <option value="Hyderabadi biryani">Hyderabadi biryani</option>
+              <option value="Vegetable pulao">Vegetable pulao</option>
+              <option value="kashmiri pulao">kashmiri pulao</option>
+              <option value="Tandoori roti">Tandoori roti</option>
+              <option value="Tandoori butter">Tandoori butter</option>
+              <option value="Methi roti">Methi roti</option>
+              <option value="Plain naan">Plain naan</option>
+              <option value="Laccha paratha">Laccha paratha</option>
+              <option value="Butter naan">Butter naan</option>
+              <option value="Kashmiri naan">Kashmiri naan</option>
+              <option value="Plain curd">Plain curd</option>
+              <option value="Boondi raita">Boondi raita</option>
+              <option value="Pudina raita">Pudina raita</option>
+              <option value="Kakdi raita">Kakdi raita</option>
+              <option value="Pineapple raita">Pineapple raita</option>
+              <option value="Peanut chat">Peanut chat</option>
+              <option value="Chana roast">Chana roast</option>
+              <option value="Jeera dal">Jeera dal</option>
+              <option value="Dal E' palak">Dal E' palak</option>
+              <option value="Dal butter fry">Dal butter fry</option>
+              <option value="Dal tadka">Dal tadka</option>
+              <option value="Dal makhani">Dal makhani</option>
+              <option value="Aloo mutter">Aloo mutter</option>
+              <option value="Mutter paneer">Mutter paneer</option>
+              <option value="Veg kolhapuri">Veg kolhapuri</option>
+              <option value="Corn capcicum masala">Corn capcicum masala</option>
+              <option value="Gulab jamun">"Gulab jamun</option>
+              <option value="Chenna rasgulla">Chenna rasgulla</option>
+              <option value="Icecream">Icecream</option>
+              <option value="Chicken biryani">Chicken biryani</option>
+              <option value="Hydrabadi chicken biryani">Hydrabadi chicken biryani</option>
+              <option value=">Mutton biryani">Mutton biryani</option>
+              <option value="Egg biryani">Egg biryani</option>
+              <option value="Egg chilly">"Egg chilly</option>
+              <option value="Chicken afgani tikka(8pcs)">Chicken afgani tikka(8pcs)</option>
+              <option value="Egg bhurji">Egg bhurji</option>
+              <option value="Mutton seekh kabab(8pcs)">Mutton seekh kabab(8pcs)</option>
+              <option value="Chicken seekh kabab(8pcs)">Chicken seekh kabab(8pcs)</option>
+              <option value="Hukum chicken tikka(12pcs)">"Hukum chicken tikka(12pcs)</option>
+              <option value="Tandoori mutton(6pcs)">Tandoori mutton(6pcs)</option>
+              <option value="Tomato soup">Tomato soup</option>
+              <option value="Hot & sour soup">Hot & sour soup</option>
+              <option value="Hakka noodles">Hakka noodles</option>
+              <option value="Chowmin spicy">Chowmin spicy</option>
+              <option value="Schezwan noodles">Schezwan noodles</option>
+              <option value="Singapuri noodles">Singapuri noodles</option>
+            </select>
+          </div>
+        </div>
+
+        
+
+        <div class="inputfield">
+          <label>Email Address</label>
+          <input type="email" class="input" name="email" id="email"
+            pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-zA-Z]{2,4}" required
+            oninvalid="this.setCustomValidity('Please Enter valid email')">
+        </div>
+        <div class="inputfield">
+          <label>Phone Number</label>
+          <input type="text" class="input" name="phno" id="phno" pattern="[6-9]{1}[0-9]{9}" required>
+        </div>
+        <div class="inputfield">
+          <label>Full Address</label>
+          <textarea class="textarea" name="address" id="address" pattern="[a-zA-Z0-9]+(\s([a-zA-Z0-9]+\s)+)[a-zA-Z0-9]+"
+            required></textarea>
+        </div>
+        <div class="inputfield">
+          <label>Pin Code</label>
+          <input type="text" class="input" name="pin" id="pin" pattern="[0-9]{6}" required>
+        </div>
+
+        <button type="submit" name="submit"><b>Place Order</b></button>
+
+      </div>
+    </form>
+  </div>
+  
+</body>
+
+</html>
